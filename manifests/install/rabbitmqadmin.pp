@@ -48,7 +48,7 @@ class rabbitmq::install::rabbitmqadmin {
       username         => $default_user,
       password         => $default_pass,
       allow_insecure   => true,
-      download_options => $archive_options,
+      #download_options => $archive_options,
       cleanup          => false,
       require          => [
         Class['rabbitmq::service'],
